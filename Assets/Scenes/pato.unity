@@ -384,6 +384,8 @@ MonoBehaviour:
   spawner2: {fileID: 186934041}
   spawner3: {fileID: 1793713607}
   menuVictoria: {fileID: 604587183}
+  musicaVictoria: {fileID: 8300000, guid: b94c6bb338d51bb4883319e6dddc9e46, type: 3}
+  volumenMusica: 1
 --- !u!1 &62607250
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,7 +1134,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15, y: 110}
+  m_AnchoredPosition: {x: -15, y: 153.5}
   m_SizeDelta: {x: 54.1701, y: 46.4624}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &478280124
