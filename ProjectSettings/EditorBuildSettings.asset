@@ -8,8 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/menu_inicial.unity
     guid: c923e41c2b0c35d4eb2684248e21216e
-  - enabled: 0
-    path: Assets/pato.unity
+  - enabled: 1
+    path: Assets/Scenes/pato.unity
     guid: acf42ca01f8bf2c4091e68a4033aa39e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

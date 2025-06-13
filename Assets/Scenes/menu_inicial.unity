@@ -205,13 +205,13 @@ MonoBehaviour:
       - m_Target: {fileID: 768927550}
         m_TargetAssemblyTypeName: menu_inicial, Assembly-CSharp
         m_MethodName: Jugar
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: pato
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &167052562
@@ -788,9 +788,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64f2d33be1a25d249b604d1182888c34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasMenu: {fileID: 768927544}
-  cameraMenu: {fileID: 781007739}
-  menuMusica: {fileID: 424068785}
 --- !u!1 &781007739
 GameObject:
   m_ObjectHideFlags: 0
@@ -966,7 +963,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -8.700317, y: 0.00048828125}
+  m_AnchoredPosition: {x: -8.700195, y: 0.00048828125}
   m_SizeDelta: {x: 17.401, y: -0.001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &876252189

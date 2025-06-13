@@ -9,6 +9,8 @@ public class menu_pausa : MonoBehaviour
 
     [SerializeField] private GameObject[] vidasUI; // vida1, vida2, vida3
 
+    private AudioSource musicaGameplay; // Referencia a la música del gameplay
+
     public void Pausa()
     {
         Time.timeScale = 0f;
@@ -29,10 +31,30 @@ public class menu_pausa : MonoBehaviour
             if (vida != null)
                 vida.SetActive(false);
         }
+
+        // Obtenemos la referencia a la música del gameplay en la Main Camera
+        musicaGameplay = Camera.main?.GetComponent<AudioSource>();
+        if (musicaGameplay == null)
+        {
+            Debug.LogWarning("No se encontró AudioSource en la Main Camera");
+        }
+
+        // Detener la música del gameplay
+        if (musicaGameplay != null && musicaGameplay.isPlaying)
+        {
+            musicaGameplay.Pause(); // Usamos Pause en lugar de Stop para poder reanudarla después
+        }
     }
 
     public void Reanudar()
     {
+
+        // Reanudar la música del gameplay
+        if (musicaGameplay != null && !musicaGameplay.isPlaying)
+        {
+            musicaGameplay.Play();
+        }
+
         Time.timeScale = 1f;
         botonPausa.SetActive(true);
 
