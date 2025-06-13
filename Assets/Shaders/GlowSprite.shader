@@ -61,7 +61,7 @@ Shader "Custom/GlowSprite"
                 {
                     // Efecto de pulso
                     float pulse = (sin(_Time.y * _PulseSpeed) + 1.0) * 0.5;
-                    float glowIntensity = _GlowStrength * (0.7 + pulse * 0.3);
+                    float glowIntensity = _GlowStrength * (0.4 + pulse * 0.3);
                     
                     // Mezclar color original con glow
                     fixed4 glowColor = lerp(texColor, _GlowColor, glowIntensity * 0.5);
